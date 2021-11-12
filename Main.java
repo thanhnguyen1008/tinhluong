@@ -26,28 +26,7 @@ public class Main{
 		TruongPhong nhanvien = new TruongPhong(ten_nhan_vien, he_so_luong, phu_cap);
 		luong = nhanvien.luong();
 		System.out.println(luong);
-    }
-	
-	
-	int num, i, j, temp;
-        System.out.println("nhap vao so nhan vien va vien chuc:");
-        num = scanner.nextInt();
-        int array[] = new int[num];
-        System.out.println("nhap vao thu nhap cac nhan vien:");
-        for (i = 0; i < num; i++)
-            array[i] = scanner.nextInt();
-        for (i = 0; i < (num - 1); i++) {
-            for (j = 0; j < num - i - 1; j++) {
-                if (array[j] > array[j + 1]) {
-                    temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
-                }
-            }
-        }
-        System.out.println("ket qua sau khi sap xep thu tu nhan vien la: ");
-        
-
+    	}
 }
 }
 
